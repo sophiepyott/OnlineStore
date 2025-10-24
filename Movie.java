@@ -16,6 +16,7 @@ public class Movie extends ItemForSale
 
         return duration;
     }
+    //override method to return movie details
     @Override
     public String getCreator(){
         

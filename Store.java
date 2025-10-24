@@ -36,6 +36,7 @@ public class Store
     this.items = new ArrayList<>();
   }
   //methods
+  //displays all items on sale
   public void showItems(){
 
     for(ItemForSale item : items){
@@ -43,11 +44,13 @@ public class Store
       System.out.println(item.getName() + ", $" + item.getPrice());
     }
   }
+  //adds item to the store catalogue
   public void addItem(ItemForSale item){
 
     items.add(item);
     System.out.println(item.getName() + " added.");
   }
+  //sells an item, removes it from the list, and adds to profit
   public void sellItem(String itemName){
 
     ItemForSale itemSold = null;
@@ -62,6 +65,7 @@ public class Store
     items.remove(itemSold);
     System.out.println(itemSold.getName() + " sold for $" + itemSold.getPrice());
   }
+  //shows the creator for the item
   public void creator(String itemName){
 
     for(ItemForSale item : items){

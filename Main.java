@@ -24,22 +24,22 @@ public class Main
       store.addItem(book2);
       store.addItem(movie1);
       store.addItem(movie2);
-
+      //shows items for sale
       System.out.println("Items for sale: ");
       store.showItems();
-
+      //shows creators
       System.out.println("Creators: ");
       store.creator("Harry Potter");
       store.creator("It");
       store.creator("Guardians Of The Galaxy");
       store.creator("E.T. The Extra-Terrestrial");
-
+      //sell an item
       System.out.println("Selling: ");
       store.sellItem("It");
-
+      //show updated list of items
       System.out.println("updated items for sale: ");
       store.showItems();
-
+      //displays total profit
       System.out.println("Profit: ");
       System.out.println("Profit: $" + store.getProfit());
      }
